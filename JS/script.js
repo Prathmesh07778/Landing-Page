@@ -16,6 +16,23 @@ getStartedBtn.addEventListener('click', () => {
 });
 
 
+document.getElementById("logo").addEventListener("click",function(){
+
+    let isLoggedIn = false;
+
+    if(isLoggedIn){
+        wind
+    }
+
+});
+
+const movieGrid = document.querySelector('.movie-grid');
+
+movieGrid.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    movieGrid.scrollLeft += event.deltaY;
+});
+
 
 
 const faqItems = document.querySelectorAll('.faq-item');

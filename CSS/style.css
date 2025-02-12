@@ -315,26 +315,38 @@ html {
 
 .movie-grid {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 10px;
-    padding: 0% 5% ;
-     background-color: #c7b8b8;
+    overflow-x: auto;
+    gap: 25px;
+    padding: 20px;
+    scroll-snap-type:  x mandatory;
+   
     
 }
 
 .movie-card {
-    height: 250px;
-    width: 1000px;
-    text-align: center;
+    position: relative;
+    min-width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-type: start;
+
+    transition: transform 0.3s ease-in-out;
 }
 
 .movie-card img {
     height: 100%;
-    width: 100%;
+    width: 90%;
+    border-radius: 10px;
+    object-fit: cover; 
     
 }
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+
 
 
 
@@ -361,8 +373,8 @@ html {
 }
 
 .feature-card {
-    height: 220px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     padding: 15px;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     border-radius: 10px;
@@ -370,12 +382,14 @@ html {
 }
 
 .feature-card h3 {
+    font-size: 1.5rem;
     color: #fff;
     margin-bottom: 10px;
 }
 
 .feature-card p {
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: 400;
     color: #ddd;
 }
 
@@ -416,6 +430,7 @@ html {
     padding: 0 10%;
 }
 .faq-container {
+    height: 60vh;
     width: 1200px;
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -426,8 +441,10 @@ html {
     margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
+    
 }
 .faq-question {
+    height: 30px;
     background: #333;
     padding: 15px;
     cursor: pointer;
@@ -435,6 +452,7 @@ html {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+
 }
 .faq-answer {
     display: none;
@@ -444,4 +462,52 @@ html {
 }
 .faq-item.active .faq-answer {
     display: block;
+}
+
+footer{
+    max-width: 80vw;
+     margin: auto;
+    padding: 18px;
+
+}
+footer .questions{
+    color: white;
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item a{
+    font-size: 13px;
+    color: white;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.language{
+    
+    padding: 40px 0;
+}
+
+.language .dropdown{
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top:0.35rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.45rem;
+    padding-left: 1.2rem;
+    border-color: white;
+}
+
+.netflix-india span{
+    padding: 40px 0 80px 0;
+    color: white;
 }
