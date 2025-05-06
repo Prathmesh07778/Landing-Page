@@ -85,7 +85,7 @@ nav button {
 }
 
 .hero>:nth-child(3) {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
 }
@@ -114,21 +114,26 @@ nav button {
 }
 
 .btn-red-sem {
-    
+    min-height: 2rem;
     background-color: red;
     color: white;
-    padding: 12px  18px;
-    font-size: 18px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 7px;
 }
 
 .email-input {
-    height: 4.9vh;
-    width: 33vh;
-    padding: 5px, 24px;
+    height: 3.0rem;
+    width: auto;
+    padding: 10px, 30px;
     font-size: 22px;
     font-weight: 600;
+    padding-left: 3rem;
+    padding-right: 3rem;
     border-radius: 8px;
     border: 2px solid #fff;
     color: #fff;
@@ -424,46 +429,84 @@ html {
     }
 }
 
-.feq{
-    margin-top: 10vh;
-    color: #fff;
-    padding: 0 10%;
-}
-.faq-container {
-    height: 60vh;
-    width: 1200px;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-}
 
-.faq-item {
-    background: #222;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    overflow: hidden;
+
+.faq h2 {
+    text-align: start;
+    font-size: 24px;
+    margin-left: 160px;
     
 }
-.faq-question {
-    height: 30px;
-    background: #333;
-    padding: 15px;
-    cursor: pointer;
+
+.faq {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-
-}
-.faq-answer {
-    display: none;
-    padding: 15px;
-    background: #444;
-    font-size: 16px;
-}
-.faq-item.active .faq-answer {
-    display: block;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 15px auto;
+    cursor: pointer;
 }
 
+
+.membership{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.membership h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.membership-form{
+    margin-top: 5px;
+}
+
+.membership  .membership-email{
+    
+    border-radius: 3px;
+    border-color: white;
+    min-height: 2rem;
+    width:500px;
+    font-size: 20px;
+    padding: 10px;
+    gap: 3px;
+    background: transparent;
+}
+
+.membership-btn{
+    border: 0;
+    min-height: 3.5rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    padding-left:1.5rem;
+    padding-right:2rem;
+    color: white;
+    background-color: rgba(229, 9, 20, 1);
+}
 footer{
     max-width: 80vw;
      margin: auto;
